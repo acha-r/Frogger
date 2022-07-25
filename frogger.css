@@ -1,0 +1,60 @@
+.grid {
+    border: 1px solid black;
+    height: 180px;
+    width: 180px;
+    display: flex; /*so that it can accomodate the 81 boxes but this alters their specifications */
+    flex-wrap: wrap; /* the 81 boxes fit in and maintain the dimensions given below */
+}
+
+/* to style every div element inside "grid": */
+.grid div {
+    height: 20px; /*because there 9 "divs (squares)" per line (verify?), divide the height of the parent div, grid, by 9. so 180/9 = 20 */
+    width: 20px; /*same story as height */
+}
+
+.ending-block {
+    background-color: red;
+}
+
+.starting-block {
+    background-color: blue;
+}
+
+/*you can style two items at the same time if you want them to have the same features obviously. */
+/*.log-left, 
+.log-right {
+    background-color: lightblue;
+}  Not needed any more because of l classes below
+
+.car-left,
+.car-right {
+    background-color: lightgray;
+} 
+
+the frog was moved to the last because order matters. we need to see it when it passes through the other colors
+.frog {
+    background-color: green;
+}  */
+
+.l1, .l2, .l3 {
+    background-color: brown;
+}
+
+/* water */
+.l4, .l5 {
+    background-color: lightblue;
+}
+
+ /*car */
+.c1 {
+    background-color: black;
+}
+
+.c2, .c3 {
+    background-color: lightgray;
+}
+
+/* the frog.. obviously */
+.frog {
+    background-color: green;
+}
